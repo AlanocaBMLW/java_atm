@@ -55,11 +55,22 @@ public class App {
 			if (decision >= 1 || decision < 5) {
 				if (decision == 1) {
 					for(int i=0;i<clienteMenu.getCuentas().size();i++) {
-						System.out.println("Cuentas \n");
+						System.out.println("Cuenta "+i+1);
+						System.out.println(clienteMenu.getCuentas().get(i).getMoneda());
 						System.out.println(clienteMenu.getCuentas().get(i).getSaldo());
+						System.out.println(clienteMenu.getCuentas().get(i).getTipo());
+						System.out.println();
 					}
 					
 				} else if (decision == 2) {
+					for(int i=0;i<clienteMenu.getCuentas().size();i++) {
+						System.out.println("Cuentas \n");
+						System.out.println(clienteMenu.getCuentas().get(i).getMoneda());
+						System.out.println(clienteMenu.getCuentas().get(i).getSaldo());
+						System.out.println(clienteMenu.getCuentas().get(i).getTipo());
+					}
+					int decisionCuenta=0;
+					
 
 				} else if (decision == 3) {
 
